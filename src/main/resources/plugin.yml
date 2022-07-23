@@ -1,0 +1,9 @@
+name: PayPluginExample
+version: '${project.version}'
+main: com.github.cyberryan1.paypluginexample.PayPluginExample
+api-version: 1.18
+commands:
+  bal:
+  earn:
+  pay:
+  setbal:
