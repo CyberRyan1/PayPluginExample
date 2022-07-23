@@ -1,7 +1,6 @@
 package com.github.cyberryan1.paypluginexample;
 
 import com.github.cyberryan1.cybercore.CyberCore;
-import com.github.cyberryan1.cybercore.utils.VaultUtils;
 import com.github.cyberryan1.paypluginexample.commands.BalCommand;
 import com.github.cyberryan1.paypluginexample.commands.EarnCommand;
 import com.github.cyberryan1.paypluginexample.commands.PayCommand;
@@ -15,7 +14,6 @@ public final class PayPluginExample extends JavaPlugin {
     public void onEnable() {
         // Initialize things
         CyberCore.setPlugin( this );
-        new VaultUtils();
 
         // Update/load data files
         YMLUtils.getData().getYMLManager().initialize();
