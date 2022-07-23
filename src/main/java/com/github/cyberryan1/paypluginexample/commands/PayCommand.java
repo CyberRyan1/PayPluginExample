@@ -45,6 +45,11 @@ public class PayCommand extends CyberCommand {
             return true;
         }
 
+        if ( target.getUniqueId().equals( player.getUniqueId() ) ) {
+            CoreUtils.sendMsg( player, "&7You cannot pay yourself, silly!" );
+            return true;
+        }
+
         if ( target.hasPlayedBefore() == false ) {
             CoreUtils.sendMsg( player, "&b" + target.getName() + " &7has not joined the server, therefore they cannot be paid" );
             return true;
