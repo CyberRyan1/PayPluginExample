@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
 public class Utils {
 
     public static String getFormattedNumber( double x ) {
-        DecimalFormat format = new DecimalFormat( "#.00" );
+        DecimalFormat format = new DecimalFormat( "0.00" );
         format.setGroupingUsed( true );
         format.setGroupingSize( 3 );
         format.setDecimalSeparatorAlwaysShown( true );
